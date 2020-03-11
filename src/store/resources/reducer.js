@@ -47,6 +47,8 @@ export default function userSliceReducer(state = initialState, action) {
   switch (action.type) {
     case 'ADD_RESOURCE':
       return [...state, action.payload]
+    case 'DELETE_RESOURCE':
+      return state.filter(resource => resource.id !== action.payload);
     default: {
       return state;
     }

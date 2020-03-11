@@ -15,7 +15,7 @@ function App() {
         <ResourceDetails />
         <br/>
         <AddResourceForm />
-        {/* <Resources /> */}
+        <Resources />
     </div>
 
   );
